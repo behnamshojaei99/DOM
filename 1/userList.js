@@ -37,7 +37,7 @@ function showUser(users) {
         container.innerHTML += `
             <div class="card">
                 <div class="card__img">
-                    <img src=${user.avatar}>
+                    <img alt="user avatar" src=${user.avatar}>
                 </div>
                 <div class="card__detail">
                     <p>${user.first_name + user.last_name}</p>
