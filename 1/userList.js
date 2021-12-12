@@ -47,7 +47,7 @@ function showUser(users) {
         `;
     })
     page++;
-    page >4  ?  button.classList.add('hide'): null;
+    page > 4  ?  button.classList.add('hide'): null;
 }
 
 document.addEventListener('DOMContentLoaded', getUsers)
