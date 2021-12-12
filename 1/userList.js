@@ -2,10 +2,10 @@ const container = document.querySelector('.container');
 const button = document.querySelector('#next');
 const loading = document.querySelector('#loading');
 let page = 1;
-
+const httpReq = new XMLHttpRequest();
+const perPage = 3;
 function getUsers(page = 1) {
-    const httpReq = new XMLHttpRequest();
-    const perPage = 3;
+
     httpReq.onreadystatechange = function () {
         try {
             if ( httpReq.readyState === 4) {
